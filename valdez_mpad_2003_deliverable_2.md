@@ -65,7 +65,25 @@ This also shows how to create an ordered list. Simply put `1.` before each item.
 
 Use three hashtag symbols (`###`) to create a level 3 heading like this one. Please follow this template when it comes to level 1 and level 2 headings. However, you can use level 3 headings as you see fit.
 
-Insert text here.
+### VIMO Analysis
+
+To instill this data's reliability and analytical integrity, this dataset was audited using the VIMO framework (Validity, Integrity, Completeness, and Accuracy).  Assessing these angles has become essential before mapping or visualizing the data, as undetected errors can lead to skewed insights and misleading narratives (Cairo, 2016).  Rather than auditing every variable, my evaluation focused specifically on the primary rows driving this analysis: language metrics (non-official language speakers), age demographics (seniors), and median income.  Connecting these specific data points is key to understanding how language barriers might affect access to local healthcare services.  
+
+# Validity 
+
+I made sure the columns had the correct format.  For instance, checking the rows listing non-official language speakers only had numbers and didn't have text errors that would mess up further visualizations for this EDA.
+
+# Integrity 
+
+I ensured the dataset stayed aligned across columns.  This meant keeping language and income data tied to the correct geographic wards so I didn't accidentally match one neighbourhoods language stats with another's healthcare needs.
+
+# Completeness
+
+I scanned the dataset for any missing information.  In rows showing non-official language speakrs or vulnerable groups, some smaller population numbers might be left blank by Statistics Canada for privacy.  I noted where data was missing so it wouldn't skew the healthcare access analytics.  
+
+# Accuracy
+
+I even took the initiative to double check numbers against logical totals.  As checking the data helps prevent basic mistakes.  Furthermore, I made sure the language breakdown numbers added up properly before drawing conclusions about which wards might need better multilingual health resources.  
 
 Support your claims by citing relevant sources. Please follow [APA guidelines for in-text citations](https://apastyle.apa.org/style-grammar-guidelines/citations).
 
@@ -75,7 +93,25 @@ As seen in Bounegru & Gray (2011), a data visualization should be clear...
 
 ### 2.2. Cleaning Data
 
-Insert text here.
+To prepare the census dataset for healthcare equity analysis, three primary cleaning procedures were applied across the selected wards:
+
+# Trimming Whitespace and Column Filtering
+
+Using Google sheets built-in data cleanup tools ( Data > Data cleanup > Trim whitespace), all extra trailing and leading spaces in the category descriptions were stripped.  The primary ward columns (Columns N, P, T) and key demographic rows were then extracted into a focused tab, isolating non-official language speakers, age groups, and income levels to remove irrelevant census data.  
+
+# Reorgranizing Text Strings with Formulas
+
+To make ward headers and category labels cleaner for pivot table reporting, spreadsheet formulas were used.  The SPLIT function was used to isolate specific header text from raw CSV string parameters: =SPLIT(A2, ":").
+
+The CONCENATE function was then used to merge language indicators directly with targeted ward numbers for clear chart labeling: concatenate(A5, " - Ward ", N$1).
+
+# Standardizing Categories with Find and Replace
+
+The find and replace tool (Ctrl + H) was used to fix messy text labels.  Abbreviated or inconsistent census text entries (such as "Non-off. lang." or "Eng/Fr Neither") were replaced with standardized terms like "Non-Official Language Speakers" and "Neither Official Language Spoken" to maintain clarity across all tables.  
+
+
+
+
 
 ### 2.3. Analyzing Data
 
