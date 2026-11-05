@@ -5,8 +5,6 @@
 
 # Deliverable 2: Exploratory Data Analysis (EDA)
 
-Use one hashtag symbol (`#`) to create a level 1 heading like this one.
-
 # Official Bilingualism Vs. Everyday Reality: Language Barriers in Ottawa Healthcare
 
 ## Foreword
@@ -24,12 +22,31 @@ And to create an unordered list, we simply put a star (`*`) before each item.
 
 ## 1. Getting Data
 
-Use two hashtag symbols (`##`) to create a level 2 heading like this one.
+For my exploratory analysis, I have selected the 2021 Long Form Census Ward Dataset published on [Open Ottawa].  (https://open.ottawa.ca/datasets/ottawa::2021-long-form-census-ward-data/about)
 
-To include a screen capture, use the sample code below. Your images should be saved in the same folder as your `.md` file.
+Currently, to import this data into Google sheets, I downloaded the raw .csv file directly from their portal.  Next, I imported the file into sheets, using "Replace spreadsheet" to populate the rows.  The imported dataset can be accessed via my [Public Google Sheets Spreadsheet]  (https://docs.google.com/spreadsheets/d/1frPs9xn0qgetXE0PTjPqiEm5rBZTXNIspGW2AnpYdj8/edit?usp=sharing)
 
-![](import-screen-capture.png)<br>
-*Figure 1: The "Import file" prompt on Google Sheets.*
+![Google Sheets Screenshot](longformcensus.png)<br>
+*Figure 1: The Imported 2021 Long Form Census Dataset in Google Sheets.*
+
+### General & Specific Observations
+
+In total there are 2,603 rows and 26 columns in this dataset, I'd say overall the data looks clean enough.  
+It is a lot to look at though and puts strain on my eyes, so to effectively visualize this data I will be only selecting and comparing relevant columns & rows given a posed question/depending on the angle I am exploring.
+
+A few key variables I've noticed in Column A specifically, featuring discrete and continuous numerical variables representing aggregated census values for each specific Ward in Ottawa include: 
+    
+    - Rows tracking household sizes represent discrete numerical variables tracking counts of private households. (e.g. 2 persons, 3 persons)
+    - Rows tracking financial metrics represent continuous numerical variables capturing monetary amounts. (e.g. Median monthly shelter cost, Average value of dwelling)
+    - Rows tracking percentages represent continuous ratio variables measured as precentages. (e.g. % of owner households in core need)
+
+## Out of the Ordinary Observations to Note:
+
+I have noticed rows and specific cells showing '0' or ellipses (...) depending on data suppression rules applied by Statistics Canada to protect privacy in low population dissemination areas or specific wards.
+
+### Potential Hypothesis:
+
+Despite Ottawa's official bilingual designation, the rapid growth of non-official mother tongues led by Arabic and Mandarin highlights a shifting linguistic landscape that challenges traditional bilingual service delivery in certain municipal wards.  
 
 **Here are examples of functions and lines of code put in grey boxes:**
 
