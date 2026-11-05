@@ -61,13 +61,25 @@ This also shows how to create an ordered list. Simply put `1.` before each item.
 
 ## 2. Understanding Data
 
-### 2.1. VIMO Analysis
 
-Use three hashtag symbols (`###`) to create a level 3 heading like this one. Please follow this template when it comes to level 1 and level 2 headings. However, you can use level 3 headings as you see fit.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### VIMO Analysis
 
-To instill this data's reliability and analytical integrity, this dataset was audited using the VIMO framework (Validity, Integrity, Completeness, and Accuracy).  Assessing these angles has become essential before mapping or visualizing the data, as undetected errors can lead to skewed insights and misleading narratives (Cairo, 2016).  Rather than auditing every variable, my evaluation focused specifically on the primary rows driving this analysis: language metrics (non-official language speakers), age demographics (seniors), and median income.  Connecting these specific data points is key to understanding how language barriers might affect access to local healthcare services.  
+To instill the data's reliability, I audited it using the VIMO framework as mandatory (Validity, Integrity, Completeness, and Accuracy).  I would say assessing these angles is essential before mapping out and visualizing the data, as generally it can be easy to miss errors that will lead to skewed insights and misleading narratives (Cairo, 2016).  Rather than auditing every single variable, my evaluation focuses on various primary rows driving the analysis: language metrics (non-official language speakers), age demographics (seniors), and median income.  Connecting these specific data points is key to understanding how language barriers might affect access to local healthcare services.  
 
 # Validity 
 
@@ -83,7 +95,7 @@ I scanned the dataset for any missing information.  In rows showing non-official
 
 # Accuracy
 
-I even took the initiative to double check numbers against logical totals.  As checking the data helps prevent basic mistakes.  Furthermore, I made sure the language breakdown numbers added up properly before drawing conclusions about which wards might need better multilingual health resources.  
+I even took the initiative to double check numbers against logical totals.  As checking the data helps prevent basic mistakes.  Furthermore, I made sure the language breakdown numbers added up properly before drawing conclusions about the wards that might need better multilingual health resources.  
 
 Support your claims by citing relevant sources. Please follow [APA guidelines for in-text citations](https://apastyle.apa.org/style-grammar-guidelines/citations).
 
@@ -107,15 +119,30 @@ The CONCENATE function was then used to merge language indicators directly with 
 
 # Standardizing Categories with Find and Replace
 
-The find and replace tool (Ctrl + H) was used to fix messy text labels.  Abbreviated or inconsistent census text entries (such as "Non-off. lang." or "Eng/Fr Neither") were replaced with standardized terms like "Non-Official Language Speakers" and "Neither Official Language Spoken" to maintain clarity across all tables.  
-
-
-
+To clean up the dataset, I used the Find and Replace tool to fix up messy or shortened text labels.  Some of the raw census data had weird abbreviations like "Non-off. lang." or "Eng/Fr Neither," so I changed those to clearer names so the tables actually made sense. 
+![2nd Google Sheets Screenshot](dataset.png)<br>
+*Figure 2: The Aggregated Data; using specific columns in a new spreadsheet.*
 
 
 ### 2.3. Analyzing Data
 
-Insert text here.
+To examine how these linguistic barriers crosspaths with healthcare accessibility throughout Ottawa, I conducted my EDA using a pivot table aggregation and a targeted visual comparison chart.  
+
+## Variable Selection & Rationale
+
+For my main focus, I zoomed in on the non-official language speakers row, the neither official language spoken row, and median income across all the Ottawa wards.  I picked these specific variables because a language barrier makes it way harder for someone to get through hospital triage, understand prescription directions, or give proper informed consent during an emergency.  Looking at these stats side by side with median income also helps show if lower income neighbourhoods are getting hit with a double whammy; meaning they not only face a language barrier, but they also do not have the spare cash to pay out of pocket for private translation or extra care.
+
+## Pivot Table Aggregation & Key Findings
+
+By using a pivot table I was able to consctruct the total counts of non-official language speakers alongside income baselines across target wards.  The summarization was then generated using the =COUNTA function to verify valid data points per ward: =COUNTA(C2:AA2).
+
+## Standing Out Statistic
+
+Looking at the numbers, a few areas really jump out.  Rideau-Vanier (Ward 12) and Somerset (Ward 14) have way more people who do not speak English or French compared to suburban places like West Carleton-March (Ward 5), and on top of that, their median household incomes are a lot lower ($39,200 compared to $56,400).
+
+## The Potential Story & Narrative
+
+
 
 **This section should include a screen capture of your pivot table, like so:**
 
