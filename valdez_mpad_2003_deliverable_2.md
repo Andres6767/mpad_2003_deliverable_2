@@ -61,22 +61,6 @@ This also shows how to create an ordered list. Simply put `1.` before each item.
 
 ## 2. Understanding Data
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### VIMO Analysis
 
 To instill the data's reliability, I audited it using the VIMO framework as mandatory (Validity, Integrity, Completeness, and Accuracy).  I would say assessing these angles is essential before mapping out and visualizing the data, as generally it can be easy to miss errors that will lead to skewed insights and misleading narratives (Cairo, 2016).  Rather than auditing every single variable, my evaluation focuses on various primary rows driving the analysis: language metrics (non-official language speakers), age demographics (seniors), and median income.  Connecting these specific data points is key to understanding how language barriers might affect access to local healthcare services.  
@@ -134,7 +118,7 @@ For my main focus, I zoomed in on the non-official language speakers row, the ne
 
 ## Pivot Table Aggregation & Key Findings
 
-By using a pivot table I was able to consctruct the total counts of non-official language speakers alongside income baselines across target wards.  The summarization was then generated using the =COUNTA function to verify valid data points per ward: =COUNTA(C2:AA2).
+By using a pivot table I was able to construct the total counts of non-official language speakers alongside income baselines across target wards.  The summarization was then generated using the =COUNTA function to verify valid data points per ward: =COUNTA(C2:AA2).
 
 ## Standing Out Statistic
 
@@ -142,26 +126,30 @@ Looking at the numbers, a few areas really jump out.  Rideau-Vanier (Ward 12) an
 
 ## The Potential Story & Narrative
 
-
+The potential story here points to a clear health equity divide across Ottawa's wards.  Urban core neighbourhoods like Rideau-Vanier and Somerset have a high concentration of residents who speak non-official languages alongside lower median incomes, creating a situation where vulnerable populations face obstacles that non-English and non-French speakers in lower-income areas are at a much higher risk of miscommunication in hospital emergency rooms or clinics, showing a real need for targeted translation services in specific municipal wards.  
 
 **This section should include a screen capture of your pivot table, like so:**
 
-![](pivot-table-screen-capture.png)<br>
+![]([pivot-table.png])<br>
 *Figure 2: This pivot table shows...*
 
 **This section should also include a screen capture of your exploratory chart, like so:**
 
-![](chart-screen-capture.png)<br>
-*Figure 3: This exploratory chart shows...*
+![](exploratory-chart.png)<br>
+*Figure 3: This exploratory chart shows some statistics explored based on specific characteristics*
 
 ## 3. Delivering Data
 
-Insert text here.
+To fully bring this story to life, the census numbers are just the starting point.  To really understand how language barriers affect our healthcare ecosystems in Ottawa, I would need spatial data mapping out where local health clinics, walk-in centers, and emergency rooms are located relative to these high density language wards.  I would also look at patient wait times and emergency room discharge stats to see if non-English or non-French speakers experience longer delays or higher rates of readmission.
+
+Given my circumstances, I believe reaching out to somebody such as a frontline healthcare worker, community leaders or advocates, patients, or local residents within wards 12 & 14 to deepen my research, and come to a definitive answer to my hypothesis.
 
 ## 4. References
 
-Include a list of your references here. Please follow [APA](https://apastyle.apa.org/style-grammar-guidelines/references) or [MLA](https://www.mla.org/MLA-Style) guidelines for references. Hanging paragraphs aren't required though.
+Bounegru, L., & Gray, J. (Eds.). (2021). *The data journalism handbook 2: Towards a critical data practice*. Amsterdam University Press. https://doi.org/10.5117/9789462989580
 
-**Here's an example:**
+Cairo, A. (2016). *The truthful art: Data, charts, and maps for communication*. New Riders.
 
-Bounegru, L., & Gray, J. (Eds.). (2021). *The Data Journalism Handbook 2: Towards A Critical Data Practice*. Amsterdam University Press. [https://ocul-crl.primo.exlibrisgroup.com/permalink/01OCUL_CRL/hgdufh/alma991022890087305153](https://ocul-crl.primo.exlibrisgroup.com/permalink/01OCUL_CRL/hgdufh/alma991022890087305153)
+City of Ottawa. (2022). *2021 Long-form census ward data* [Data set]. Open Ottawa. https://open.ottawa.ca/datasets/ottawa::2021-long-form-census-ward-data/about
+
+Statistics Canada. (2022). *Census profile, 2021 census of population* (Statistics Canada Catalogue no. 98-316-X2021001). Government of Canada. https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/index.cfm
