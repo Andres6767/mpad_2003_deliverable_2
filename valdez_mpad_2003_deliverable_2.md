@@ -1,6 +1,6 @@
 **10/31/26**<br>
 **MPAD2003A & Introductory Data Storytelling**<br>
-**Carlos & Valdez**<br>
+**Carlos Valdez**<br>
 **Presented to Jean-Sébastien Marier**<br>
 
 # Deliverable 2: Exploratory Data Analysis (EDA)
